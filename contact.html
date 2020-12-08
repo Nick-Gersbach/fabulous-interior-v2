@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabulous | Contact</title>
+    <!-- Gothic Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/293abf4b96.js" crossorigin="anonymous"></script>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="contact-header">
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <nav id="navbar" class="top">
+            <div class="logo">
+                <a href="index.html">
+                    Contact.
+                </a>
+
+            </div>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h2>DROP US A LINE</h2>
+    </section>
+    <section id="contact-form">
+        <form>
+            <div class="form-control">
+                <!-- Name Input -->
+                <div></div>
+                <label for="name" id="name-label">Name <span>*</span></label>
+            </div>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-control">
+                <!-- Email Input -->
+                <div>
+                    <label for="email" id="email-label">Email<span>*</span></label>
+                </div>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-control">
+                <div class="message-label">
+                    <label for="budget">What's Your Budget?<span>*</span></label>
+                </div>
+                <select name="budget" id="dropdown">
+                    <option hidden disabled selected value>Select Budget</option>
+                    <option value="$5000">$5,000</option>
+                    <option value="10000">$10,000</option>
+                    <option value="15000">$15,0000</option>
+                    <option value="20000">$20,000</option>
+                </select>
+            </div>
+            <div class="form control">
+                <div class="message-label">Message:<span>*</span></div>
+                <textarea name="" id="" cols="90" rows="10" required></textarea>
+            </div>
+            <input class="submit" type="submit" value="Send Message">
+        </form>
+    </section>
+    <section id="lets-talk">
+        <div class="container">
+            <div class="lets-talk-container">
+                <div class="contact-icons">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </div>
+                <div class="big-text">
+                    <h1>Let's Talk?</h1>
+                </div>
+                <div class="lets-talk-btn">
+                    <a href="contact.html">Make an inquiry!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-info">
+        <div class="phoenix">
+            <h2>Phoenix.</h2>
+            <h3>602-569-0997</h3>
+        </div>
+        <div class="tempe">
+            <h2>Tempe.</h2>
+            <h3>480-309-2156</h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy;2020 Fabulous Interior Design. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1081 @@
+/*  Colors 
+
+Pink - #E8204F
+Black - #191919
+white - #fff
+let's talk - #1B1B1B
+phone numbers - #161616
+bottom footer - #000000
+*/
+
+/* Font 
+
+instagram - <i class="fab fa-instagram"></i>
+
+linkedin - <i class="fab fa-linkedin"></i>
+
+
+font-family: 'Nanum Gothic', sans-serif;
+
+*/
+
+/* 
+
+
+Global Styling
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.7;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.container  {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+.pink-text {
+    color: #E8204F;
+}
+
+.active {
+    border-bottom: 1px solid #E8204F;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn:hover{
+  opacity: 0.9;  
+}
+
+/* 
+
+Header
+
+*/
+
+header { background: linear-gradient(rgba(20,20,20, .8), rgba(20,20,20, .8)),
+   url(./img/fabulous-header-bg.jpg) no-repeat center center/cover;
+  height: 55vh;
+  color: white;
+}
+
+hr {
+    width: 90px;
+    height: 3px;
+    background: #E8204F;
+    border: none;
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-left: 45px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+p {
+    padding-left: 45px;
+    font-weight: 700;
+}
+
+/* 
+
+JS Hamburger Button
+
+
+*/
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+/* 
+
+Navigation
+
+*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0 15px;
+    font-weight: 700;
+}
+
+nav ul li a {
+font-size: 16px;
+color: white;
+transition: all 0.2s ease-in-out;
+padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+border-bottom: 2px solid #E8204F;
+}
+
+.logo a {
+    color: white;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+/* 
+
+Main Content
+
+*/
+
+main {
+    margin-top: 55px;
+     display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+main .content-area h1 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+main .content-area p {
+    margin-bottom: 25px;
+    font-weight: 200;
+    color:#747474;
+    max-width: 960;
+    max-height: 75;
+    
+}
+
+main .content-area img {
+max-width: 900px;
+margin-top: 40px;
+    
+}
+
+/* 
+
+Large Photo
+
+*/
+
+section #large-photo img {
+    max-width: 960px;
+}
+
+/* 
+
+Main Page Gallery
+
+*/
+.gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 50px;
+}
+
+.gallery img {
+   width: 100%;
+   height: auto;
+}
+
+.small-bedroom {
+ grid-column: 2 / 4;
+}
+
+.small-livingroom {
+ grid-column: 2 / 4;
+}
+
+.medium-livingroom {
+     grid-row: 1 / 3;
+}
+  
+
+/* 
+
+Right Sidebar
+
+*/
+
+main .right-sidebar {
+    margin-left: 25px;
+}
+
+main .right-sidebar h2 {
+    color: #E8204F;
+}
+main .right-sidebar hr {
+    
+    width: 40px;
+    height: 2px;
+    background: #E8204F;
+    border: none;
+    margin-left: 45px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+main .right-sidebar h3 {
+    color: #191919;
+    margin-left: 45px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+main .right-sidebar p {
+    margin-bottom: 10px;
+     color:#747474;
+}
+
+main .right-sidebar hr.gray-line {
+    margin-bottom: 10px;
+     background: #e5e5e5;
+     width: 90px;
+    height: 2px;
+}
+
+main .right-sidebar .sidebar-icons {
+   color: #747474;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+
+main .right-sidebar .sidebar-icons i {
+  padding: 0 10px;
+  transition: all .2s ease-in-out;
+}
+
+main .right-sidebar .sidebar-icons i:hover {
+  color: #E8204F;
+  cursor: pointer;
+
+}
+
+main .right-sidebar .contact-btn-container {
+    margin-left: 45px;
+    margin-top: 40px;
+    
+}
+
+main .right-sidebar .contact-btn-container a {
+    border: 2px solid #E8204F;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+main .right-sidebar .contact-btn-container a:hover {
+    background: #E8204F;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* 
+
+Related Projects
+
+*/
+
+#related-projects .line {
+     width: 90px;
+    height: 3px;
+    background: #E8204F;
+    border: none;
+    margin-left: 45px;
+    margin-top: 50px;
+}
+
+#related-projects h1 {
+    margin-top: 20px;
+    font-size: 48px;
+    color: #E8204F;
+}
+
+#related-projects .related-projects-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#related-projects .related-projects-images img {
+    padding: 0 20px;
+}
+
+/* 
+
+
+Lets Talk
+
+*/
+
+#lets-talk {
+    background: #1B1B1B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+#lets-talk .lets-talk-container {
+       display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+#lets-talk .lets-talk-container i{
+     margin: 0 10px;
+     padding: 12px;
+     border: 1px solid #E8204F;
+     border-radius: 50%;
+     cursor: pointer;
+     transition: all 0.2s ease-in-out;
+}
+
+#lets-talk .lets-talk-container i:hover{
+    color: #E8204F;
+}
+
+#lets-talk .lets-talk-container h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#lets-talk .lets-talk-container a{
+       color: white;
+       border: 1px solid #E8204F;
+       padding: 15px 40px;
+       font-weight: 900;
+       font-size: 18px;
+       transition: all .2s ease-in-out;
+}
+
+#lets-talk .lets-talk-container a:hover{
+       color: white;
+      background: #E8204F;
+}
+
+/* 
+
+Contact Info
+
+*/
+
+#contact-info {
+    background: #161616;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 40px;  
+}
+
+#contact-info h2{
+    text-align: center;
+    margin-right: 35px;
+}
+
+#contact-info h3{
+    text-align: center;
+}
+
+/* 
+
+Footer
+
+*/
+
+footer {
+    background: #000000;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+/* 
+
+About Header
+
+*/
+
+#about-header { background: linear-gradient(rgba(20,20,20, .8), rgba(20,20,20, .8)),
+   url(./img/about-bg.jpg) no-repeat center center/cover;
+  height: 55vh;
+  color: white;
+}
+
+/* 
+
+Workplace
+
+*/
+
+#workplace {
+    display: grid; /* Tells the browser you want to display the parent div as grid, just like flex*/
+
+    grid-template-columns: repeat(3, 1fr); /*Tells the browser you want grid columns (4 of them) and each one to take up 1fr of space so they are all in a row */
+    grid-gap: 20px; /*We want 20px of space in between each card so they aren't all stuck together */
+margin-top: 100px;
+
+}
+
+#workplace img {
+width: 100%;
+height: auto;
+}
+
+#workplace h3 {
+text-align: center;
+margin-top: 10px;
+
+}
+
+#workplace p {
+text-align: center;
+margin-top: 10px;
+margin-right: 50px;
+
+}
+
+/* 
+
+Clients
+
+*/
+
+#clients {
+        display: grid; /* Tells the browser you want to display the parent div as grid, just like flex*/
+
+    grid-template-columns: repeat(2, 1fr); /*Tells the browser you want grid columns (4 of them) and each one to take up 1fr of space so they are all in a row */
+    grid-gap: 60px; /*We want 20px of space in between each card so they aren't all stuck together */
+margin-top: 130px;
+}
+
+#clients img {
+     max-width: 600px;
+     height: auto;
+}
+
+
+#clients hr {
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+#clients h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#clients h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#clients p {
+    font-size: 21px;
+    font-weight: 200;
+    color: #747474;
+    position: relative;
+    right: 50px;
+    margin-bottom: 25px;
+}
+
+
+/* 
+
+
+
+
+Contact
+
+
+
+
+*/
+
+#contact-header {
+    background: linear-gradient(rgba(20,20,20, .8), rgba(20,20,20, .8)),
+   url(./img/contact-header.jpg) no-repeat center center/cover;
+  height: 55vh;
+  color: white;
+}
+
+
+/* 
+
+
+
+
+Form
+
+
+
+
+*/
+
+#contact-form {
+    margin-top: 100px;
+}
+
+form {
+    border-radius: 7px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    margin-bottom: 4rem;
+}
+
+
+form  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+span {
+    color: #E8204F;
+}
+
+.message-label {
+     font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+form  input {
+    border: none;
+    border-bottom: 1px solid #191919;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 80%;
+    outline: none;
+}
+
+form  select {
+    padding: 10px 20px;
+    margin-bottom: 2rem;
+}
+
+textarea {
+    width: 80%;
+    height: auto;
+    resize: none;
+    outline: none; font-size: 18px;
+}
+
+.submit {
+    padding: 15px 30px;
+    color: white;
+    background: #E8204F;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit:hover {
+opacity: .9;
+}
+
+/* 
+
+Img Lightbox
+
+*/
+
+#lightbox {
+   opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease-in;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: rgba(0,0,0, 0.85);
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+    
+}
+
+/* 
+
+Services
+
+*/
+
+#services-header { background: linear-gradient(rgba(20,20,20, .8), rgba(20,20,20, .8)),
+   url(./img/services-header.jpg) no-repeat center center/cover;
+  height: 55vh;
+  color: white;
+}
+
+#services-features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    align-items: center;
+    margin-bottom: 150px; 
+    margin-top: 100px;
+}
+
+.h1-container{
+    margin-top: 120px;
+}
+
+#services-features .feature i {
+  margin-left: 45px;
+  padding-top: 45px;
+}
+
+#services-features .feature{
+    background: #1B1B1B;
+    color: #fff;
+}
+
+#services-features .feature.pink-bg{
+    background: #E8204F;
+    color: #fff;
+}
+
+#services-features .feature p {
+ padding-bottom: 45px;
+ padding-right: 30px;
+}
+
+h2.bold {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+h3.service-h3 {
+    margin-left: 45px;
+    color: #E8204F;
+}
+
+#service-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin-top: 50px;
+}
+
+#service-buttons h3 {
+    font-weight: 900px;
+}
+
+#service-buttons .service-btn {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #F3F3F3;
+   padding: 35px;
+   transition: all .2s ease-in-out;
+}
+
+#service-buttons .service-btn:hover {
+background: #E8204F;
+color: #fff;
+cursor: pointer;
+font-size: 21px;
+}
+
+/* 
+
+Slider
+
+*/
+
+.wrap {
+    position: relative;
+    height: 100vh;
+    /* overflow: hidden; */
+    margin-top: 100px;
+}
+
+#slider {
+    height: 100vh;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1{
+    background-image: url(./img/slider-big-1.jpg);
+    height: 100vh;
+}
+.slide2{
+    background-image: url(./img/slider-big-2.jpg);
+     height: 100vh;
+}
+.slide3{
+    background-image: url(./img/slider-big-3.jpg);
+     height: 100vh;
+}
+.slide4{
+    background-image: url(./img/slider-big-4.jpg);
+     height: 100vh;
+}
+.slide5{
+    background-image: url(./img/slider-big-5.jpg);
+     height: 100vh;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    left: 0;
+    margin-left: 30px;
+    border-color: transparent #E8204F transparent transparent;
+    margin-top: 35px;
+}
+
+#arrow-right {
+    border-width: 30px 0px 30px 40px;
+    right: 0;
+    margin-right: 30px;
+    border-color: transparent transparent transparent #E8204F;
+      margin-top: 35px;
+}
+
+/* 
+
+Media Queries
+
+*/
+
+@media only screen and (max-width: 768px) {
+/* 
+
+Mobile Nav Button 
+
+*/
+
+  
+
+.menu-btn {
+    display: block;
+}
+
+.menu-btn:hover {
+    opacity: 0.5;
+}
+
+/* 
+
+Mobile Navigation
+
+*/
+
+ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #191919;
+    width: 50%;
+    height: 100%;
+    opacity: .9;
+    transform: translateX(-500px);
+    transition: transform 0.6s ease-in-out;
+}
+
+ul.main-menu li {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+ul.main-menu.show {
+    transform: translateX(-10px);
+}
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+  hr {
+    margin-top: 30px;
+}
+
+header p {
+    margin-right: 20px;
+}
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+    }
+
+    main h2 {
+        text-align: center;
+    }
+
+    .right-sidebar h2 {
+        margin-right: 60px;
+    }
+
+    .large-img {
+        width: 80%;
+        height: auto;
+        padding-left: 30px;
+    }
+
+    div .large-img {
+        margin: 0 auto;
+        display: block  ;
+    }
+
+    .gallery {
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    #related-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .related-projects-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .related-projects-images img {
+    margin: 15px 0;
+    width: 80%;
+        
+    }
+
+    #lets-talk {
+        flex-direction: column;
+    }
+    
+    .lets-talk-container {
+        flex-direction: column;
+    }
+
+    #lets-talk .lets-talk-container i{
+   display: block;
+   text-align: center;
+   margin: 20px 0;
+}
+
+    #lets-talk .lets-talk-container h1{
+   display: block;
+   text-align: center;
+   margin: 30px;
+}
+
+#contact-info {
+    flex-direction: column;
+}
+
+
+footer p {
+    margin-right: 60px;
+}
+
+#about-header { background: linear-gradient(rgba(20,20,20, .8), rgba(20,20,20, .8)),
+   url(./img/about-bg.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#workplace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+   width: 80%;
+   height: auto;
+}
+
+#clients div img {
+   margin: 0 auto;
+   display: block;
+}
+#clients h1 {
+  margin-left: 50px;
+}
+
+#clients h3 {
+  margin-left: 50px;
+}
+
+#clients p {
+  margin-left: 50px;
+}
+
+#clients h4 {
+  margin-left: 50px;
+}
+
+#contact-header {
+    background: linear-gradient(rgba(20,20,20, .8), rgba(20,20,20, .8)),
+   url(./img/contact-header.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#contact-form {
+    margin-left: 60px;
+}
+
+#services-header {
+    height: 100vh;
+}
+
+#service-buttons {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#services-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 415px) {
+    img {
+        cursor: default;
+    }
+
+    #lightbox {
+        display: none;
+    }
+
+    #lightbox.active {
+        display: none;
+    }
+
+    #service-buttons {
+        grid-template-columns: repeat(1, 1fr);
+        
+}
+
+
+}
